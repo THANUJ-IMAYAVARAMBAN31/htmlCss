@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f3e7ff, #e6e9ff);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    font-size: 18px;
+    color: #4b0082;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #4b0082;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Content Section */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.content {
+    flex: 1;
+    text-align: center;;
+    padding-right: 30px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 2em;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Image Section */
+.image-section img {
+    width: 350px;
+    border: 6px solid #4b0082;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(75, 0, 130, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #4b0082;
+    margin-bottom: 25px;
+}
+
+.services ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.services li {
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.services li:hover {
+    background: #4b0082;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Book Form */
+.book, .Contact {
+    padding: 40px 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.book label, .book input {
+    display: span;
+    width: 25%;
+    margin-bottom: 15px;
+}
+
+.book input {
+    padding: 10px;
+    border: 2px solid #4b0082;
+    border-radius: 5px;
+}
+
+.book button {
+    padding: 10px 25px;
+    background: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book button:hover {
+    background: #350061;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #4b0082;
+    color: #fff;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
